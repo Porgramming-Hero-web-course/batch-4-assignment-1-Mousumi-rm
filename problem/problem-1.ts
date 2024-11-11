@@ -27,30 +27,18 @@ function sumArray (add:number[]):number {
 console.log(sumArray([1,2,3,4,5]))
 
 // solution-2
+/*
+this is  different from first solution i using {.reduce()}
+ methods it uses js and also ts.its a build-in array methods
+ i think one is easies way to me.  
+*/ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const sumWithInitial = 0;
+function sumArray2 (sum: number[]):number{
+    return sum.reduce((accumulator,currentValue) =>
+     accumulator + currentValue,sumWithInitial);
+}
+console.log(sumArray2([1,2,3,4,5,6]))
 
 //  
 }
